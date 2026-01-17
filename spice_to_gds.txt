@@ -1,0 +1,5 @@
+klayout -n sg13g2 -zz -r hierarchical.py \
+  -rd netlist=/foss/designs/DLL/2026/Cells/simulation/TOP.spice \
+  -rd output=/foss/designs/DLL/2026/Layout/TOP_v1.gds \
+  -rd leaf=1 \
+  -rd gallery=0
