@@ -9,11 +9,10 @@ N 0 310 0 330 {lab=VSS}
 N -850 210 -850 230 {lab=GND}
 N -750 210 -750 230 {lab=GND}
 N -850 450 -850 480 {lab=VSS}
-N -850 290 -850 310 {lab=VIN}
+N -850 290 -850 390 {lab=VIN}
 N 0 200 50 200 {lab=VOUT}
 N 0 200 0 250 {lab=VOUT}
 N -450 180 -390 180 {lab=VIN}
-N -850 380 -850 390 {lab=#net1}
 N -300 260 -300 330 {lab=VCONT}
 N -300 330 -170 330 {lab=VCONT}
 N -170 260 -170 330 {lab=VCONT}
@@ -117,16 +116,16 @@ value="
   plot v(VIN) v(VOUT) 
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} -730 -70 0 0 {name=TRANSIENT1 only_toplevel=true
 value="
 .control
- tran 1p 200n
+ tran 1p 10n
  plot v(VIN) v(VOUT)
  plot v(VCONT)
 .endc
 "
-spice_ignore=true}
+}
 C {code.sym} -540 -250 0 0 {name=PHASE_vs_VCONT1 only_toplevel=true
 value="
 .control
@@ -185,7 +184,7 @@ value="
 .endc
 "
 spice_ignore=true}
-C {sg13g2_stdcells/sg13g2_inv_2.sym} -850 340 3 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {sg13g2_stdcells/sg13g2_inv_2.sym} -850 340 3 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ spice_ignore=true}
 C {/foss/designs/DLL/2026/Cells/TOP.sym} -240 200 0 0 {name=x1}
 C {lab_pin.sym} -240 280 2 0 {name=p1 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -240 110 2 0 {name=p2 sig_type=std_logic lab=VDD}

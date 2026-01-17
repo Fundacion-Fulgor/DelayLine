@@ -8,7 +8,6 @@ E {}
 N 720 60 720 130 {lab=VSS}
 N 530 0 570 0 {lab=#net1}
 N 510 420 560 420 {lab=#net2}
-N 870 0 1270 -0 {lab=VOUT}
 N 230 440 310 440 {lab=PD2}
 N 230 400 310 400 {lab=VIN}
 N 410 310 410 340 {lab=VDD}
@@ -28,7 +27,8 @@ N 590 130 720 130 {lab=VSS}
 N 460 130 590 130 {lab=VSS}
 N 230 0 230 400 {lab=VIN}
 N 220 -0 230 0 {lab=VIN}
-N 760 420 810 420 {lab=VOUT}
+N 760 420 810 420 {lab=CPOUT}
+N 870 0 1270 -0 {lab=VOUT}
 C {/foss/designs/DLL/2026/Cells/DLine.sym} 720 0 0 0 {name=x1}
 C {lab_pin.sym} 720 100 2 0 {name=p1 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 720 -100 2 0 {name=p2 sig_type=std_logic lab=VDD}

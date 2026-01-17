@@ -15,7 +15,8 @@ model=cap_cmim
 w=10e-6
 l=10e-6
 m=1
-spiceprefix=X}
+spiceprefix=X
+}
 C {sg13g2_pr/rppd.sym} -150 -110 3 0 {name=R2
 w=1e-6
 l=40e-6
